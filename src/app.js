@@ -14,7 +14,11 @@ app.use(bodyParser.json());
 // Routes
 app.use('/api/email', emailRoutes);
 
+const server = ()=>{
 // Start server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+}
+
+module.exports=server

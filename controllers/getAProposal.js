@@ -1,4 +1,4 @@
-const transporter = require('../config/nodemailerConfig');
+const transporter = require('../src/config/nodemailerConfig');
 
 exports.sendProposalEmail = async (req, res) => {
     const { email } = req.body;
