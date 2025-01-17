@@ -14,6 +14,10 @@ app.use(bodyParser.json());
 // Routes
 app.use('/api/email', emailRoutes);
 
+app.get('/', (req, res)=>{
+    res.send({code: 200, message: "Server is running"})
+})
+
 const server = ()=>{
 // Start server
 app.listen(PORT, () => {
