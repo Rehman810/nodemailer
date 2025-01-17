@@ -4,7 +4,7 @@ exports.sendEmail = async (req, res) => {
     const { email, subject, message } = req.body;
 
     if (!email || !subject || !message) {
-        return res.status(400).json({ error: 'All fields are required.' });
+        return res.status(400).json({ error: 'All fields are required.' }); 
     }
 
     try {
